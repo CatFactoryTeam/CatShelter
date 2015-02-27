@@ -9,10 +9,11 @@ import java.util.Calendar
 
 import me.verticale.imgur.Imgur
 
-/** Imgur service.
+/** CatShelter
+  *
   * Handle everything Imgur related (retrieve cats data mainly).
   */
-object ImgurService {
+object CatShelter {
     lazy val cats = createCats()
     val imgur = new Imgur(Play.current.configuration.getString("imgur.key").get)
 
