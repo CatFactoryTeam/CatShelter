@@ -5,8 +5,6 @@ import models.Cat
 import play.Logger
 import play.api.Play
 
-import java.util.Calendar
-
 import me.verticale.imgur.Imgur
 
 /** CatShelter
