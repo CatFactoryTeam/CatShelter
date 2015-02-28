@@ -7,15 +7,18 @@ import play.api.Play
 
 import me.verticale.imgur.Imgur
 
-/** CatShelter
+/** The cat shelter, where cats live and rest peacefully
   *
-  * Handle everything Imgur related (retrieve cats data mainly).
+  * Handle everything Imgur related
   */
 object CatShelter {
     lazy val cats = createCats()
     val imgur = new Imgur(Play.current.configuration.getString("imgur.key").get)
 
-    /** Create all cats from the Imgur album */
+    /** Create all cats from the Imgur album
+      *
+      * @return An array containing all cats
+      */
     def createCats(): Array[Cat] = {
       Logger.info("[ImgurService] Creating cats...")
 
