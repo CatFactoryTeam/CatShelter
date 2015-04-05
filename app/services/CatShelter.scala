@@ -11,7 +11,7 @@ import me.verticale.imgur.Imgur
   * Handle everything Imgur related
   */
 object CatShelter {
-    val cats = createCats()
+    lazy val cats = createCats()
     val imgur = new Imgur(configuration.getString("imgur.key").get)
 
     /** Create all cats from the Imgur album

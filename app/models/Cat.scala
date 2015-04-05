@@ -21,4 +21,4 @@ object Cat {
   * @param mp4 Link to the MP4
   * @param webm Link to the WebM
   */
-class Cat(id: String, link: String, mp4: String, webm: String)
+class Cat(val id: String, val link: String, val mp4: String, val webm: String)
