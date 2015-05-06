@@ -13,5 +13,3 @@ scalaVersion := "2.11.5"
 libraryDependencies ++= Seq(
   cache
 )
-
-fork in run := true

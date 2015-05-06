@@ -11,7 +11,7 @@ import me.verticale.imgur.Imgur
   * Handle everything Imgur related
   */
 object CatShelter {
-    lazy val cats = createCats()
+    val cats = createCats()
     val imgur = new Imgur(configuration.getString("imgur.key").get)
 
     /** Create all cats from the Imgur album
@@ -24,8 +24,8 @@ object CatShelter {
       // Retrieve images from the album "imgur.album"
       // Map each image to create a list with Cat instances
       val cats = imgur.albumImages(configuration.getString("imgur.album").get)
-        .map(Cat(_))
-        .toArray
+        .map(c => (c.id.get , Cat(c)))
+        .toMap
 
       Logger.info("[ImgurService] Cats created!")
 
