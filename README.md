@@ -10,4 +10,4 @@ It's a service to retrieve cats and to store them.
 
 This is done by using Imgur API.
 
-And it's currently used by [CatRest](https://github.com/CatFactoryTeam/CatRest), our RESTful API.
+And it's currently used by [CatApi](https://github.com/CatFactoryTeam/CatApi), our RESTful API.
