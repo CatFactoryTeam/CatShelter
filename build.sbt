@@ -11,6 +11,8 @@ lazy val imgur = RootProject(uri("git://github.com/Cowa/Imgur-Scala.git#master")
 scalaVersion := "2.11.5"
 
 libraryDependencies ++= Seq(
+  "org.scalatestplus" %% "play" % "1.1.0" % "test",
+  "com.livestream" %% "scredis" % "2.0.6",
   cache
 )
 
