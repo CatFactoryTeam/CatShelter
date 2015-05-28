@@ -19,7 +19,7 @@ object CatShelter {
       * @return An array containing all cats
       */
     def createCats(): Array[Cat] = {
-      Logger.info("[ImgurService] Creating cats...")
+      Logger.info("[CatShelter] Creating cats...")
 
       // Retrieve images from the album "imgur.album"
       // Map each image to create a list with Cat instances
@@ -27,7 +27,7 @@ object CatShelter {
         .map(Cat(_))
         .toArray
 
-      Logger.info("[ImgurService] Cats created!")
+      Logger.info("[CatShelter] Cats created!")
 
       cats
     }
